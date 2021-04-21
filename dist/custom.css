@@ -1,0 +1,172 @@
+@charset "UTF-8";
+.reveal section {
+  font-family: open_sanslight, serif; }
+  .reveal section img {
+    border: none;
+    background: none;
+    box-shadow: none;
+    margin: 0; }
+  .reveal section .shadowed {
+    -webkit-box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.75); }
+  .reveal section h1 {
+    font-family: 'pacificoregular', cursive; }
+    .reveal section h1.title {
+      color: #e35e67;
+      text-shadow: 0 0 2px #612a2f; }
+  .reveal section h2, .reveal section h3, .reveal section h4 {
+    font-family: open_sansregular, serif;
+    text-decoration: underline;
+    text-decoration-color: rgba(227, 94, 103, 0.49); }
+  .reveal section blockquote {
+    border: 20px solid;
+    padding: 15px;
+    -webkit-border-image: url(../img/bubble.png) 100 stretch;
+    /* Safari 3.1-5 */
+    -o-border-image: url(../img/bubble.png) 100 stretch;
+    /* Opera 11-12.1 */
+    border-image: url(../img/bubble.png) 100 stretch;
+    box-shadow: none;
+    font-family: open_sansitalic, serif; }
+    .reveal section blockquote b {
+      font-family: open_sansextrabold_italic, serif; }
+  .reveal section ul {
+    padding-top: 20px;
+    list-style-type: none; }
+    .reveal section ul li:before {
+      content: "–";
+      position: absolute;
+      margin-left: -1em; }
+    .reveal section ul li {
+      padding-bottom: 10px; }
+  .reveal section .fragments-inplace {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; }
+  .reveal section img.ikigai-circle {
+    height: 600px; }
+  .reveal section h2.vs {
+    font-family: open_sansextrabold_italic, serif;
+    text-decoration: none;
+    font-size: 3em;
+    text-shadow: 0 0 10px black; }
+  .reveal section .hide-not-current-fragment .fragment.visible:not(.current-fragment) {
+    visibility: hidden; }
+  .reveal section .stock-photo {
+    height: 650px;
+    position: relative; }
+  .reveal section .center {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .reveal section .black-slide h2 {
+    color: white; }
+  .reveal section .rotter {
+    border-radius: 25px;
+    border: 3px dashed #100007;
+    padding: 20px;
+    margin-bottom: 50px; }
+  .reveal section .locus {
+    display: flex; }
+    .reveal section .locus img {
+      height: 250px; }
+    .reveal section .locus div {
+      flex: auto; }
+
+.reveal ul.instructions {
+  font-family: roboto_mono, monospace;
+  font-size: 20px; }
+  .reveal ul.instructions a {
+    color: #612a2f; }
+    .reveal ul.instructions a:hover {
+      text-decoration: underline; }
+  .reveal ul.instructions .hint {
+    background-color: #ffcc68;
+    margin-right: 10px;
+    padding: 0 10px 0 10px; }
+  .reveal ul.instructions li:before {
+    content: ""; }
+
+.reveal .quiz-table {
+  font-size: 1em; }
+  .reveal .quiz-table .number {
+    font-family: open_sansbold, serif;
+    color: #e35e67;
+    text-align: center; }
+  .reveal .quiz-table td {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.53); }
+  .reveal .quiz-table tr.fragment:not(.visible) {
+    filter: blur(1.5rem);
+    opacity: 1.0;
+    visibility: visible; }
+
+.reveal .info {
+  font-size: 1.3em; }
+  .reveal .info .twitter {
+    padding-bottom: 80px; }
+    .reveal .info .twitter img {
+      width: 70px;
+      padding-right: 10px;
+      opacity: 0.9; }
+  .reveal .info img.small-logo {
+    width: 50px;
+    margin: 0;
+    vertical-align: middle;
+    border-radius: 0;
+    padding-right: 5px; }
+  .reveal .info .team-text {
+    padding-top: 20px; }
+  .reveal .info a {
+    color: black; }
+
+.fullscreen-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex; }
+
+#ikigai {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 400px;
+  z-index: 102;
+  display: none; }
+
+#black-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: none; }
+
+#fire {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background: url(../img/fire.gif) no-repeat center center;
+  display: none; }
+
+div.slide-background.present[data-background-hash="img/bg-end.pngnullnullnullnullnullnullnullnull"] {
+  filter: blur(15px); }
